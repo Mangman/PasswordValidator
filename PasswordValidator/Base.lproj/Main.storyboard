@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PasswordValidator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Jee-4w-ihK">
+                                <rect key="frame" x="107" y="183" width="106" height="201"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="td2-TR-k2B">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwH-lp-Bgh">
+                                                <rect key="frame" x="0.0" y="0.0" width="106" height="25"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="21"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kRf-QE-9GV">
+                                                <rect key="frame" x="0.0" y="25" width="106" height="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Mg-9p-eIs">
+                                        <rect key="frame" x="0.0" y="82" width="106" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBz-eh-T3l">
+                                                <rect key="frame" x="0.0" y="0.0" width="106" height="25"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="21"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ako-fp-dRe">
+                                                <rect key="frame" x="0.0" y="25" width="106" height="30"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdd-YJ-9lP">
+                                        <rect key="frame" x="0.0" y="164" width="106" height="37"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                        <state key="normal" title="Log in">
+                                            <color key="titleColor" red="0.11037627352052286" green="0.50208606020942415" blue="0.089598701895751892" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="enterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIA-lY-YKr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="59o-3Y-25f">
+                                <rect key="frame" x="36" y="28" width="248" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="236" placeholderIntrinsicHeight="25" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKz-hX-nIQ">
+                                <rect key="frame" x="38" y="392" width="244" height="25"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kKz-hX-nIQ" secondAttribute="trailing" constant="22" id="2g1-Ja-uBX"/>
+                            <constraint firstItem="Jee-4w-ihK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="A5V-Fp-CnL"/>
+                            <constraint firstItem="kKz-hX-nIQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="C9M-hZ-eJB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="59o-3Y-25f" secondAttribute="trailing" constant="20" id="HIX-az-N5c"/>
+                            <constraint firstItem="59o-3Y-25f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="VRI-cb-h1n"/>
+                            <constraint firstItem="Jee-4w-ihK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="163" id="cTG-WX-plr"/>
+                            <constraint firstItem="Jee-4w-ihK" firstAttribute="top" secondItem="59o-3Y-25f" secondAttribute="bottom" constant="27" id="gKX-6j-yEh"/>
+                            <constraint firstItem="kKz-hX-nIQ" firstAttribute="top" secondItem="Jee-4w-ihK" secondAttribute="bottom" constant="8" id="p3T-5L-skV"/>
+                            <constraint firstItem="59o-3Y-25f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="w3j-K4-cGz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jee-4w-ihK" secondAttribute="trailing" constant="91" id="xT5-nO-Sa2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="kKz-hX-nIQ" id="LhY-pk-U5P"/>
+                        <outlet property="imageView" destination="59o-3Y-25f" id="WlT-Sn-OeJ"/>
+                        <outlet property="loginField" destination="kRf-QE-9GV" id="QIc-Xu-NHL"/>
+                        <outlet property="passwordField" destination="ako-fp-dRe" id="2R9-v1-Pea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="96"/>
+        </scene>
+    </scenes>
+</document>
